@@ -1,0 +1,104 @@
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            box-shadow: 0px 0px 3px 2px #888;
+        }
+
+        .header .menu a {
+            color: #5a4559;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            margin: 0px 10px;
+        }
+
+        .header .menu a:hover {
+            color: #1e8bbe;
+        }
+
+        .login-register a {
+            text-decoration: none;
+            color: #5a4559;
+            font-size: 20px;
+            margin: 0px 10px;
+        }
+
+        .login-register a:hover {
+            color: #1e8bbe;
+        }
+
+        .bg_login {
+            background-image: url('../image/bg.jpg');
+            padding: 150px 0px;
+        }
+
+        .login {
+            display: grid;
+            grid-template-columns: 100px auto;
+
+            width: 600px;
+            margin: auto auto;
+        }
+
+        .login .tieude {
+            color: #292d3b;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 18px 0px;
+        }
+
+        .login .nhaplieu .cssform {
+            font-size: 15px;
+            width: 300px;
+            margin: 10px 0px;
+            border: 2px solid #dddfe2;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .login .nhaplieu .cssform:hover {
+            background-color: #e3e3e3;
+        }
+
+        .btn {
+            font-size: 18px;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            margin: 0px 10px;
+        }
+
+        /* footer */
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #2a2d3c;
+            color: white;
+        }
+
+        .footer h3 {
+            color: white;
+        }
+
+        .footer ul li {
+            list-style-type: none;
+            line-height: 30px;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: white;
+        }
+ 

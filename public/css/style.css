@@ -1,0 +1,627 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 3px 2px #888;
+    background-color: #fff;
+}
+
+.header .logo img {
+    max-height: 50px;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+}
+
+.header .menu a {
+    color: #5a4559;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0px 10px;
+    position: relative;
+}
+
+.header .menu .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header .menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 160px;
+}
+
+.header .menu .dropdown-content a {
+    color: #5a4559;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.header .menu .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.header .menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header .menu a:hover {
+    color: #1e8bbe;
+}
+
+.header .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+.header .search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+}
+
+.header .search-bar button {
+    border: none;
+    background-color: #1e8bbe;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header .search-bar button:hover {
+    background-color: #166699;
+}
+
+.header .login-register {
+    display: flex;
+    align-items: center;
+}
+
+.header .login-register a {
+    text-decoration: none;
+    color: #5a4559;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.header .login-register a:hover {
+    color: #1e8bbe;
+}
+
+.header .login-register .fa-shopping-cart {
+    margin-left: 5px;
+}
+
+
+  
+  /*banner*/
+  .banner {
+    background-color: #e6dddd;
+    display: flex;
+    justify-content: space-around;
+  }
+  .banner-text {
+    margin-top: 100px;
+  }
+  .banner-text h4 {
+    color: #292d3b;
+    font-size: 30px;
+    font-style: italic;
+    padding-bottom: 30px;
+  }
+  .banner-text h2 {
+    color: #292d3b;
+    font-size: 70px;
+    font-style: italic;
+    padding-bottom: 40px;
+  }
+  .banner-text button {
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 50px;
+  }
+  .banner-text button:hover {
+    background-color: red;
+  }
+  .banner-image {
+    padding-top: 25px;
+  }
+  /*hot category*/
+  .hot {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.hot-category .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.hot-category .card-body {
+    padding: 30px;
+}
+
+.hot-text {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.hot-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hot-image img:hover {
+    transform: scale(1.05);
+}
+/* Product */
+  .list-product{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+  }
+  .box-product{
+    /* border: 1px solid #888; */
+    margin: 15px 10px;
+  
+  }
+  .box-product img{
+    width: 100%;
+    height: auto;
+    border: 2px solid #b0e92c;
+    border-radius: 15px;
+  }
+  .box-product img:hover{
+    transform: scale(1.01);
+  }
+  .mauchu{
+    color: #292d3b;
+    font-size: 25px;
+  }
+  .giatien{
+    color: #ec0707;
+    font-size: 15px;
+  }
+  .mautien_sale{
+    color: #e98809;
+    font-size: 15px;
+    
+  }
+  .product h1{
+    text-align: center;
+  }
+  .product{
+    width: 1080px;
+    margin: auto auto;
+  }
+  /* End Product */
+  
+  /*css login*/
+  .login{
+    display: grid;
+    grid-template-columns: 100px auto;
+    
+    width: 600px;
+    margin: auto auto;
+  }
+  .login .tieude{
+    color:#292d3b;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 18px 0px;
+  }
+  .login .nhaplieu .cssform{
+    font-size: 15px;
+    width: 300px;
+    margin:10px 0px;
+    border: 2px solid #dddfe2;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .login .nhaplieu .cssform:hover{
+    background-color: #e3e3e3;
+  }
+  .btn{
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 0px 10px;
+  }
+  /*register*/
+  .gt{
+    margin-top: 22px;
+  }
+  
+  /*footer*/
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2a2d3c;
+    color: white;
+  }
+  .footer h3 {
+    color: white;
+  }
+  .footer ul li {
+    list-style-type: none;
+    line-height: 30px;
+  }
+  .footer ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+
+/* Contact Section */
+.contact-section {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .contact-section h3 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-section input[type="text"],
+  .contact-section input[type="email"],
+  .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-section button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-section button:hover {
+    background-color: #555;
+  }
+
+
+ /* General styles for the product detail page */
+.product-detail {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.product-header {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.product-title {
+  font-size: 2em;
+  margin: 0;
+  color: #333;
+}
+
+.product-price {
+  font-size: 1.5em;
+  color: #d9534f;
+}
+
+.product-content {
+  display: flex;
+  gap: 20px;
+}
+
+.product-images img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.product-specifications h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.product-specifications ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-specifications li {
+  margin: 5px 0;
+}
+
+.product-specifications strong {
+  color: #333;
+}
+
+/* Styles for the quantity input */
+.product-quantity {
+  margin: 20px 0;
+}
+
+.product-quantity label {
+  font-size: 1.2em;
+  margin-right: 10px;
+  color: #333;
+}
+
+.product-quantity input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.product-quantity input[type="number"]:focus {
+  border-color: #5cb85c;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #5cb85c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buy-button:hover {
+  background-color: #4cae4c;
+}
+
+/* giỏ hàng */  
+.main-content {
+  padding: 20px;
+}
+.cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.cart-container h2 {
+  text-align: center;
+}
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-table th, .cart-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.cart-table th {
+  background-color: #f2f2f2;
+}
+.cart-table td input {
+  width: 50px;
+  text-align: center;
+}
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+}
+.cart-total span {
+  font-weight: bold;
+}
+.cart-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+.cart-actions button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.cart-actions button:hover {
+  background-color: #0056b3;
+}
+ .buy-button {
+            background-color: #ff9900;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .add-to-cart-button{
+          background-color: #ff4800;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover  {
+            background-color: #00e645;
+        }
+        .add-to-cart-button:hover{
+          background-color: #ace75e;
+          color: red;
+        }
+ 
+        /* post */
+        /* Định dạng chính của phần blog */
+.blog-posts {
+  max-width: 800px; /* Giới hạn chiều rộng tối đa của phần blog */
+  margin: 0 auto; /* Căn giữa phần blog */
+  padding: 20px; /* Khoảng cách giữa phần blog với phần còn lại của trang */
+}
+
+/* Định dạng tiêu đề */
+.blog-posts h1 {
+  font-size: 2em; /* Kích thước chữ lớn hơn cho tiêu đề */
+  text-align: center; /* Căn giữa tiêu đề */
+  margin-bottom: 20px; /* Khoảng cách dưới của tiêu đề */
+}
+
+/* Định dạng từng bài đăng trong danh sách */
+.box-blog-post {
+  background-color: #f0f0f0; /* Màu nền của từng box */
+  padding: 15px; /* Khoảng cách giữa nội dung và viền của box */
+  margin-bottom: 20px; /* Khoảng cách dưới của mỗi box */
+  border-radius: 8px; /* Bo tròn góc của box */
+}
+
+/* Định dạng ảnh của mỗi bài viết */
+.box-blog-post img {
+  max-width: 100%; /* Ảnh không vượt quá kích thước của box */
+  display: block; /* Hiển thị ảnh làm block element */
+  border-radius: 8px; /* Bo tròn góc của ảnh */
+  margin-bottom: 10px; /* Khoảng cách dưới của ảnh */
+}
+
+/* Định dạng tiêu đề bài viết */
+.box-blog-post .blog-title {
+  font-size: 1.5em; /* Kích thước chữ lớn hơn cho tiêu đề bài viết */
+  margin-bottom: 10px; /* Khoảng cách dưới của tiêu đề */
+}
+
+/* Định dạng mô tả ngắn của bài viết */
+.box-blog-post .blog-summary {
+  line-height: 1.6; /* Độ cao dòng lớn hơn để dễ đọc hơn */
+  margin-bottom: 15px; /* Khoảng cách dưới của mô tả */
+}
+
+/* Định dạng link "Read more" */
+.box-blog-post .read-more {
+  display: inline-block; /* Hiển thị link làm inline-block để có thể căn chỉnh */
+  color: #333; /* Màu chữ cho link */
+  text-decoration: none; /* Bỏ gạch chân của link */
+  font-weight: bold; /* Chữ đậm hơn */
+  margin-top: 10px; /* Khoảng cách trên của link */
+}
+
+.box-blog-post .read-more:hover {
+  text-decoration: underline; /* Gạch chân khi di chuột qua link */
+}
+.product-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.product-card .card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.product-card .card-price {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin-top: 10px;
+}
+
+.container {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
