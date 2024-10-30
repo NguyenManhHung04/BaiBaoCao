@@ -29,17 +29,7 @@
                 <div class="dropdown">
                     <a href="{{ route('site.product') }}">Product</a>
                     <div class="dropdown-content">
-                        <a href="#">Subproduct 1</a>
-                        <a href="#">Subproduct 2</a>
-                        <a href="#">Subproduct 3</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="brand">Brand</a>
-                    <div class="dropdown-content">
-                        <a href="#">Subbrand 1</a>
-                        <a href="#">Subbrand 2</a>
-                        <a href="#">Subbrand 3</a>
+                       
                     </div>
                 </div>
                 <a href="new">Tin Tức</a>
